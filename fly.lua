@@ -4,7 +4,7 @@ local RunService = game:GetService("RunService")
 
 local player = Players.LocalPlayer
 local OWNER_USER_ID = game.CreatorId
-if player.UserId ~= OWNER_USER_ID then return end
+
 
 local character = player.Character or player.CharacterAdded:Wait()
 local hrp = character:WaitForChild("HumanoidRootPart")
